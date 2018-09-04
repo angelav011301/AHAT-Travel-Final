@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.mySlides {
+  display:none;
+  height: 460px;
+  margin: auto;
+  align:middle;
+
+}
+#pics{
+  margin-top: 10px;
+  width:75%;
+  margin:auto;
+  align:middle;
+
+}
+#homecontent{
+  text-align: center;
+}
+</style>
+ <head>
+   <div id="hi">
+     <h1 class="topheaders"> <span id="title">AHATravel</span> </h1>
+     <br>
+   </div>
+    <link rel="stylesheet" href = "index.css">
+     <!-- NAVIGATION BAR -->
+     <ul>
+      <div>
+       <li><a href="index.html">HOME</a></li>
+       <li><a href="planner.html">PLANNER</a></li>
+       <li><a href="explore.html">EXPLORE</a></li>
+       <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="aboutUs.html">ABOUT US</a></li>
+     </div>
+     <div>
+      <img id="idLogo" src="AHAT Logo.png" style = "width:6%" alt="">
+     </div>
+     </ul>
+<br>
+ </head>
+
+ <body>
+   <meta name="viewport" content="width=device-width, initial-scale=1" align="center">
+
+  <div id="pics" class="w3-content w3-section" >
+    <img class="mySlides" src="photo-1445252029812-81154a7e4f6b.jpg" style="width:100%">
+    <img class="mySlides" src="photo-1465414951857-102134ffaa57.jpg" style="width:100%">
+    <img class="mySlides" src="photo-1528035177028-f52bf3d7b312.jpg" style="width:100%">
+    <img class="mySlides" src="photo-1528197387378-89c568124a24.jpg" style="width:100%">
+    <img class="mySlides" src="photo-1504913659239-6abc87875a63.jpg" style="width:100%">
+    <img class="mySlides" src="photo-1524396309943-e03f5249f002.jpg" style="width:100%">
+    <img class="mySlides" src="photo-1517370197618-b2055fe2e440.jpg" style="width:100%">
+    <img class="mySlides" src="photo-1526942617995-8c629e716da7.jpg" style="width:100%">
+    <img class="mySlides" src="photo-1529180184525-78f99adb8e98.jpg" style="width:100%">
+    <img class="mySlides" src="photo-1533281925898-be6f98703f26.jpg" style="width:100%">
+    <img class="mySlides" src="photo-1527223090385-ca195a6c3acc.jpg" style="width:100%">
+
+  </div>
+  <div id="homecontent">
+    <p id = "blurbHead" > <strong>What is AHATravel?</strong> </p>
+    <p id = "blurbText" >       
+      Organizing a trip can be such a hassle! Keeping track of all of the information about your trip can be difficult and can make your trip less enjoyable.
+      <br><br>Enter <strong>AHATravel</strong>, the new stress-free way to plan a trip! With AHATravel, all of the information about your trips can be organized and saved in an orderly fashion to ease the stress of it.
+      <br>With a <strong>Planner</strong> to keep track of flight times, trip dates, and event dates, and a <strong>checklist</strong> to write down everything you need to take, you'll never forget anything important again!
+      <br>There's even an <strong>Explore</strong> page to make finding hotels, restaurants, and attraction much easier.
+      <br><br><strong>Sign up with us today</strong> to start making travel planning an easy and relaxing experience!
+    </p>
+
+
+  </div>
+  <!-- Box -->
+
+    <div class="boxed">
+        <br>
+      <p id = "blurbText"><strong> GET STARTED PLANNING!</strong> </p> <br>
+        <br>
+        <button class= "buttonIndex"><a href="https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank"> Sign in with Google </a></button>
+
+  </div>
+
+ </body>
+ <script>
+ var myIndex = 0;
+ carousel();
+
+ function carousel() {
+     var i;
+     var x = document.getElementsByClassName("mySlides");
+     for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+     }
+     myIndex++;
+     if (myIndex > x.length) {myIndex = 1}
+     x[myIndex-1].style.display = "block";
+     setTimeout(carousel, 2000); // Change image every 2 seconds
+ }
+ </script>
+ </html>
